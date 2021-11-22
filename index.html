@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="Mars-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <script defer src="script.js"></script>
+    <title>Mars Altıntaş</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="main-nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/mars-logo.jpg" alt="logo of mars" class="logo-mars" />
+          </a>
+        </div>
+
+        <nav class="main-nav1">
+          <ul class="main-nav-list">
+            <div class="dropdown-container">
+              <a class="main-nav-link goto-remaining" href="#">Doğuma Geri Sayım</a>
+              <div class="dropdown-items" tabindex="1">
+                <h4 class="days"></h4>
+                <h4 class="hours"></h4>
+                <h4 class="mins"></h4>
+                <h4 class="secs"></h4>
+              </div>
+            </div>
+            <li><a class="main-nav-link goto-family" href="#">Ailesi</a></li>
+            <li><a class="main-nav-link goto-playmate" href="#">Oyun Arkadaşları</a></li>
+
+            <li><a target=”_blank” class="main-nav-link" href="https://formsubmit.co/el/pabaji">Mars'a Mektup</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </section>
+      
+    </header>
+
+    <div id="modal">
+      <div class="modalconent">
+        <div class="modal-img">
+          <img class="logo-mars" src="img/mars-logo.jpg" alt="logo of mars" />
+        </div>
+        <h1 class="header-modal">
+          Oğlumuz <strong>Mars</strong>'ın ilk web sayfasına hoş geldiniz.
+        </h1>
+        <div class="modal-text-box">
+          <p class="modal-text">
+            Bu sayfada <strong>Mars</strong>'ın ailesi, arkadaşları ve doğumuna
+            kalan süre gibi bilgileri bulacaksınız.
+          </p>
+
+          <p class="modal-text">
+            <strong>Mars</strong>'a mektup göndermeyi unutmayın. 😍
+          </p>
+        </div>
+        <div class="modal-btn">
+          <button id="button">Kapat</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Oğlumuz <strong>Mars</strong>'ın ilk web sayfasına hoş geldiniz.
+            </h1>
+            <p class="hero-description">
+              <strong>Mars</strong> dünyaya gelmeden önce; ailesini tanıyabilir,
+              fotoğraflarımıza bakabilir, doğumuna kalan süreyi görebilir ve
+              <strong>Mars</strong>'a mektup gönderebilirsiniz. 🥰
+            </p>
+            <a href="#" class="btn btn--full">Hadi başlayalım</a>
+          </div>
+          <div class="hero-img-box">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/1.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/25.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/2.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/3.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/7.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/10.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/9.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/5.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/23.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/15.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/13.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/16.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-img"
+                    src="slide/12.jpeg"
+                    alt="photo of family"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-remaining">
+        <div class="container">
+          <h2 class="heading-section">Doğuma geri sayım 👶</h2>
+          <div class="countdown">
+            <h4 class="days1"></h4>
+
+            <h4 class="hours1"></h4>
+
+            <h4 class="mins1"></h4>
+
+            <h4 class="secs1"></h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-family" >
+        <div class="container">
+          <h2 class="heading-section margin-bottom-m">Ailesini tanıyalım 👨‍👩‍👧‍👦</h2>
+        </div>
+
+        <div class="container grid  grid--center-v">
+          <div class="family-text-box">
+            <div class="family-description-container">
+              <p class="family-description-left">Annesi, babası ve ablası</p>
+            </div>
+          </div>
+
+          <div class="family-img-box grid grid--2-cols grid--center-v">
+            <div class="mom">
+              <img src="img/buse.jpg" alt="mom photo" class="family-img" />
+              <p class="title">Annesi</p>
+              <h2 class="name">Buse Altıntaş</h2>
+            </div>
+            <div class="dad">
+              <img src="img/burak.jpg" alt="dad photo" class="family-img" />
+              <p class="title">Babası</p>
+              <h2 class="name">Burak Altıntaş</h2>
+            </div>
+            <div class="rozi">
+              <img src="img/rozi.jpg" alt="sister photo" class="family-img" />
+              <p class="title">Ablası</p>
+              <h2 class="name">Rozi Altıntaş</h2>
+            </div>
+          </div>
+
+          <div class="family-img-box grid grid--2-cols grid--center-v">
+            <div class="grandma-buse">
+              <img
+                src="img/gdemirkir.jpg"
+                alt="grandma photo"
+                class="family-img"
+              />
+              <p class="title">Anneannesi</p>
+              <h2 class="name">Gülsen Demirkır</h2>
+              
+            </div>
+            <div class="grandma-burak">
+              <img
+                src="img/ealtintas.jpg"
+                alt="grandma photo"
+                class="family-img"
+              />
+              <p class="title">Babaannesi</p>
+              <h2 class="name">Ergün Zeynep Altıntaş</h2>
+            </div>
+            <div class="family-text-box-grandma">
+                <div class="family-description-container">
+                  <p class="family-description-right-grandma">Anneannesi ve babaannesi</p>
+                </div>
+              </div>
+          </div>
+         
+
+          <div class="family-text-box">
+            <p class="family-description-left">Dedeleri</p>
+          </div>
+          <div class="family-img-box grid grid--2-cols grid--center-v">
+            <div class="grandpa-buse">
+              <img
+                src="img/idemirkir.jpg"
+                alt="grandpa photo"
+                class="family-img"
+              />
+              <p class="title">Dedesi</p>
+              <h2 class="name">İbrahim Demirkır</h2>
+            </div>
+            <div class="grandpa-burak">
+              <img src="img/adnan.jpg" alt="grandpa photo" class="family-img" />
+              <p class="title">Dedesi</p>
+              <h2 class="name">Adnan Altıntaş</h2>
+            </div>
+          </div>
+
+          <div class="family-img-box grid grid--2-cols grid--center-v">
+            <div class="aunt">
+              <img src="img/cdemirkir.jpg" alt="dad photo" class="family-img" />
+              <p class="title">Teyzesi</p>
+              <h2 class="name">Cemre Demirkır</h2>
+            </div>
+            <div class="uncle">
+              <img src="img/odemirkir.jpg" alt="dad photo" class="family-img" />
+              <p class="title">Dayısı</p>
+              <h2 class="name">Onurcan Demirkır</h2>
+            </div>
+            <div class="family-text-box-uncle">
+                <p class="family-description-right-uncle">Teyzesi ve dayısı</p>
+              </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <section class="section-playmate">
+        <div class="container">
+          <h2 class="heading-section margin-bottom-m">
+            Oyun arkadaşlarını tanıyalım 🐕 🐈
+          </h2>
+        </div>
+
+        <div class="playmate-img-box">
+          <div class="sufle">
+            <img src="img/sufle.jpg" alt="sufle photo" class="family-img" />
+
+            <h2 class="name-playmate">Sufle Altıntaş</h2>
+          </div>
+          <div class="dobi">
+            <img src="img/dobi.jpg" alt="dobi photo" class="family-img" />
+
+            <h2 class="name-playmate">Dobi Altıntaş</h2>
+          </div>
+          <div class="zeytin">
+            <img src="img/zeytin.jpg" alt="zeytin photo" class="family-img" />
+
+            <h2 class="name-playmate">Zeytin Altıntaş</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img class="footer-logo" src="img/mars-logo.jpg" alt="logo of mars">
+          <div class="footer-container" >
+            
+  
+            <ul class="social-links">
+              <li>
+                <a target=”_blank” class="footer-link" href="https://www.instagram.com/xewor/"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a target=”_blank” class="footer-link" href="https://www.facebook.com/profile.php?id=616346676"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a target=”_blank” class="footer-link" href="https://twitter.com/burak_alti"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a target=”_blank” class="footer-link" href="https://www.linkedin.com/in/burak-alt%C4%B1nta%C5%9F-8b796b1b8/"
+                  ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a target=”_blank” class="footer-link" href="https://github.com/buraltintas"
+                  ><ion-icon class="social-icon" name="logo-github"></ion-icon
+                ></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2021 by Burak Altıntaş.
+              All rights reserved.
+            </p>
+          </div>
+        </footer>
+  </body>
+</html>
