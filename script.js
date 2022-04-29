@@ -35,7 +35,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let endDate = new Date("May 01, 2022 00:00:00").getTime();
+let endDate = new Date("May 07, 2022 00:00:00").getTime();
 
 const counter = setInterval(function () {
   let now = new Date().getTime();
