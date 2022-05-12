@@ -1,12 +1,12 @@
 "use strict";
 
-window.onload = function () {
+/* window.onload = function () {
   document.getElementById("button").onclick = function () {
     document.getElementById("modal").style.opacity = 0;
     document.getElementById("modal").style.pointerEvents = "none";
     document.getElementById("modal").style.visibility = "hidden";
   };
-};
+}; */
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -35,7 +35,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let endDate = new Date("May 07, 2022 00:00:00").getTime();
+/* let endDate = new Date("May 07, 2022 00:00:00").getTime();
 
 const counter = setInterval(function () {
   let now = new Date().getTime();
@@ -63,7 +63,7 @@ const counter = setInterval(function () {
     document.querySelector(".mins").innerHTML = "";
     document.querySelector(".secs").innerHTML = "";
   }
-}, 1000);
+}, 1000); */
 
 const btnscrollFamily = document.querySelector(".goto-family");
 const section1 = document.querySelector(".section-family");
@@ -120,6 +120,7 @@ const header = document.querySelector(".header");
 
 btnNav.addEventListener("click", function (e) {
   e.preventDefault();
+  console.log("clicked");
   header.classList.toggle("nav-open");
 });
 
